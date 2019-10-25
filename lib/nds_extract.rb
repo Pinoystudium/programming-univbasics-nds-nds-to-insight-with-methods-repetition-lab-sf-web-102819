@@ -28,17 +28,13 @@ end
 
 
 def list_of_directors(source)
-  # Write this implementation
-  pp source
-  list = directors_totals(source)
-  extract = list.keys
-  
-	element_index = 0
-	while element_index < extract.count do
-	  puts extract[element_index]
+  director_names = []
+  element_index = 0
+	while element_index < source.length do
+	  director_names << source[element_index][:name]
 	  element_index += 1
 	end
-	
+	director_names
 end 
   
   
