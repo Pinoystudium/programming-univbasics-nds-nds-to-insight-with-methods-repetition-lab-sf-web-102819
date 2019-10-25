@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
+require 'pp'
 
 def gross_for_director(d)
   total = 0
@@ -27,6 +28,7 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  pp source
   list = directors_totals(source)
   extract = list.keys
   
